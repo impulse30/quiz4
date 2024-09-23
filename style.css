@@ -45,6 +45,7 @@ h6 {
 body,
 html {
   height: 100%;
+  background-color: #000000;
 }
 
 :root {
@@ -159,4 +160,49 @@ progress {
   margin-left: -6px;
   padding-right: 6px;
   margin-right: -6px;
+}
+progress {
+  width: 100%;
+  height: 20px;
+  appearance: none;
+}
+
+progress::-webkit-progress-bar {
+  background: #f3f3f3;
+}
+
+progress::-webkit-progress-value {
+  background-color: lightblue; /* Default color */
+}
+
+.level-1::-webkit-progress-value {
+  background-color: lightblue;
+}
+
+.level-2::-webkit-progress-value {
+  background-color: lightgreen;
+}
+
+.level-3::-webkit-progress-value {
+  background-color: lightcoral;
+}
+
+.level-4::-webkit-progress-value {
+  background-color: gold;
+}
+
+.level-5::-webkit-progress-value {
+  background-color: violet;
+}
+
+.progress-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.level-indicator {
+  margin-top: 10px;
+  font-weight: bold;
 }
